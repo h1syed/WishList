@@ -1,0 +1,30 @@
+type User @model {
+  id: ID!
+  username: String!
+  email: String!
+  registered: Boolean
+  owner: String
+  wishes: [Wish] @connection(name: "UserWishes", sortField: "createdAt")
+  friends: [User]
+}
+
+type Wish  @model { 
+   user: User @connection(name: "UserWishes")
+   id: ID!
+   wishOwnerId: String!
+   wishOwnerUsername: String!
+   wishTitle: String!
+   wishBody: String!
+   owner: String
+   createdAt: String
+   likes: [Like] @connection(name: "WishLikes")#relationship
+  
+}
+
+type Like @model {
+   id: ID!
+   numberLikes: Int!
+   likeOwnerId: String!
+   likeOwnerUsername: String!
+   wish: Wish @connection(name: "WishLikes")
+}
