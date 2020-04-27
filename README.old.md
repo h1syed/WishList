@@ -1,2 +1,0 @@
-# WishList
-WishList Application
