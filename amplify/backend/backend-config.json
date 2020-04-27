@@ -1,0 +1,27 @@
+{
+    "api": {
+        "wishlist": {
+            "service": "AppSync",
+            "providerPlugin": "awscloudformation",
+            "output": {
+                "authConfig": {
+                    "additionalAuthenticationProviders": [],
+                    "defaultAuthentication": {
+                        "authenticationType": "AMAZON_COGNITO_USER_POOLS",
+                        "userPoolConfig": {
+                            "userPoolId": "authwishlist0ee47c58"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "auth": {
+        "wishlist0ee47c58": {
+            "service": "Cognito",
+            "providerPlugin": "awscloudformation",
+            "dependsOn": [],
+            "customAuth": false
+        }
+    }
+}

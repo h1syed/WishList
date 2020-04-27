@@ -1,0 +1,313 @@
+html,
+body {
+  margin: 0;
+  background-color: #f4f8fb;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.wish-button{
+  width:30%;
+  background-color: rgb(49, 142, 248);
+  padding: .8rem;
+  font-weight: 500;
+  border-radius: 4px;
+  float: right;
+  color: aliceblue;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 15px;
+} 
+
+.modal {
+  position:absolute;
+  top:40px;
+  right: 200px;
+  width: 60%;
+  height: 40%;
+  box-shadow: 4px 4px 4px rgb(114, 116, 114);
+  animation: move .2s backwards;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+ 
+
+.app-container {
+  padding: 1em 5em 2em 5em;
+}
+
+@media (max-width: 550px) {
+  .app-container {
+    padding: 1em 3em;
+  }
+}
+
+@media (max-width: 400px) {
+  .app-container {
+    padding: 1em 0.5em;
+  }
+}
+
+.card-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card-container {
+  max-width: 300px;
+  margin: 0.3em;
+}
+
+.card-body {
+  padding: 0.5em 1em;
+}
+
+.flex {
+  display: flex;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.m-1 {
+  margin: 7px !important;
+}
+
+.mx-1 {
+  margin: 0 0.5em;
+}
+
+.my-2 {
+  margin: 1em 0;
+}
+
+.ml-2 {
+  margin-left: 1em;
+}
+
+.mb-1 {
+  margin-bottom: 7px;
+}
+
+.mb-mr {
+  margin: 0 5px 5px 0;
+}
+
+.items-center {
+  display: flex;
+  align-items: center;
+}
+
+.pt-2 {
+  padding-top: 1em;
+}
+
+.app-title {
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: #f90;
+  margin: -3px;
+}
+
+.app-icon {
+  height: 30px;
+  padding-bottom: 5px;
+  padding-right: 5px;
+}
+
+.app-user {
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.text-center {
+  text-align: center;
+  margin: 0;
+}
+
+.text-right {
+  text-align: right;
+  margin: 0;
+}
+
+.text-green {
+  color: green;
+}
+
+.message {
+  z-index: 2000 !important;
+}
+
+.error {
+  color: red;
+}
+
+.progress {
+  margin: 1em;
+}
+
+.dialog {
+  max-width: 500px;
+}
+
+/* center items in navbar if screen width < 520px */
+@media (max-width: 520px) {
+  .nav-container {
+    justify-content: center;
+  }
+}
+
+/* push items in navbar to opposite ends if screen width > 520px */
+@media (min-width: 520px) {
+  .nav-container {
+    justify-content: space-between;
+  }
+}
+
+/* remove the navbar item that contains the Greetings text if width > 672px */
+@media (max-width: 690px) {
+  .nav-items .el-menu-item:nth-child(1) {
+    display: none !important;
+  }
+}
+
+.nav-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+.profile-tabs > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.delete-profile > * {
+  background: rgba(255, 0, 0, 0.2);
+}
+
+.link {
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 5px;
+  color: var(--lightSquidInk);
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.header {
+  color: var(--color-purple);
+  font-size: 1.2rem;
+  padding: 5px 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+
+.image-preview {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.icon {
+  margin-right: 5px;
+}
+
+.large-icon {
+  height: 30px;
+  margin-right: 2px;
+}
+
+.wishes{
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 1px 9px 7px #36181833;
+
+  padding: .5rem;
+}
+
+.add-wish{
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.close{
+  width:40px;
+  border-radius: 150px;
+  float: right;
+  background-color: rgb(49, 142, 248);
+  padding: .8rem;
+  font-weight: 500;
+  color: aliceblue;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+wishes div{
+  box-shadow: 1px 1px 1px rgb(182, 235, 171);
+  padding: .5rem;
+  margin: .6rem;
+  background-color: white;
+}
+
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input,textarea{
+  margin: .3rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media (max-width: 470px) {
+  .hide-xs {
+    display: none;
+  }
+}

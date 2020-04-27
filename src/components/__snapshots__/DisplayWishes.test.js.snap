@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DisplayWishes renders properly 1`] = `ShallowWrapper {}`;
