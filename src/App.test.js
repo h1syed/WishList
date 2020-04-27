@@ -5,9 +5,9 @@ import { Auth, Hub } from "aws-amplify";
 import App from "./App";
 
 import Amplify from "aws-amplify";
-import aws_exports from "./aws-exports";
+import awsmobile from "./aws-exports";
 
-Amplify.configure(aws_exports);
+Amplify.configure(awsmobile);
 
 describe("App", () => {
     const app = shallow(<App/>)
